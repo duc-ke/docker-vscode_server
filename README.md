@@ -12,12 +12,14 @@ docker-compose of VScode server(code-server)
   
   volumes:
   - "(YOURDIR):/home/coder/project"
+  # ex) - "/:/home/coder/project"
 ```
 2. user와 port번호 변경
 ```bash
   vi run_vscode.sh
   
   MYPORT=(YOURPORT) USER=(YOURSERVER_ID) MYUID=$(id -u) MYGID=$(id -g) PASSWORD=ducke docker-compose up -d
+  # ex) MYPORT=9090 USER=kehyeong MYUID=$(id -u) MYGID=$(id -g) PASSWORD=ducke docker-compose up -d
 ```
 3. 실행
 ```bash
