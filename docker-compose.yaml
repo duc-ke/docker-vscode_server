@@ -9,7 +9,7 @@ services:
     volumes:
       - "./.config:/home/coder/.config"
       - "./.local:/home/coder/.local"
-      - "/:/home/coder/project"
+      - "/data/kehyeong:/home/coder/project"
     environment:
       - DOCKER_USER=${USER}
       - PASSWORD=${PASSWORD}
