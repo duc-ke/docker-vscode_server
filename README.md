@@ -11,7 +11,7 @@ docker-compose of VScode server(code-server)
   vi docker-compose.yaml 
   
   volumes:
-  - "(호스트서버폴더경로):/home/coder/project"
+  - "(YOURDIR):/home/coder/project"
 ```
 2. user와 port번호 변경
 ```bash
