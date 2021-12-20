@@ -26,6 +26,9 @@ docker-compose of VScode server(code-server)
 sh run_vscode.sh
 ```
 
+4. 브라우저 접속
+![image](https://user-images.githubusercontent.com/54048026/146728583-5b79c2cd-84bc-46c9-aaa0-e56f6e0be77e.png)
+
 ## reference
 1. https://bundw.tistory.com/entry/VSCode-%EB%8F%84%EC%BB%A4Docker%EB%A1%9C-docker-compose-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EC%9B%B9IDE-%EA%B5%AC%EC%B6%95-code-server
 2. https://hub.docker.com/r/codercom/code-server
