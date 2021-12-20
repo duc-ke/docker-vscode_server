@@ -6,7 +6,8 @@ docker-compose of VScode server(code-server)
 * vscode server(=code-sever)설치 방법이 여러가지 있으며 script 버전 설치시 서비스를 올리고 내리는데 다른 사용자와 관리자와의 의사소통이 불편하여 docker로 설치하려 함.
 
 ## run
-1. 호스트서버(내가 작업하는 서버)의 dir변경
+1. git clone
+2. 호스트서버(내가 작업하는 서버)의 dir변경
 ```bash
   vi docker-compose.yaml 
   
@@ -14,19 +15,19 @@ docker-compose of VScode server(code-server)
   - "(YOURDIR):/home/coder/project"
   # ex) - "/:/home/coder/project"
 ```
-2. user와 port번호 변경
+3. user와 port번호 변경
 ```bash
   vi run_vscode.sh
   
   MYPORT=(YOURPORT) USER=(YOURSERVER_ID) MYUID=$(id -u) MYGID=$(id -g) PASSWORD=ducke docker-compose up -d
   # ex) MYPORT=9090 USER=kehyeong MYUID=$(id -u) MYGID=$(id -g) PASSWORD=ducke docker-compose up -d
 ```
-3. 실행
+4. 실행
 ```bash
 sh run_vscode.sh
 ```
 
-4. 브라우저 접속
+5. 브라우저 접속
 ![image](https://user-images.githubusercontent.com/54048026/146728583-5b79c2cd-84bc-46c9-aaa0-e56f6e0be77e.png)
 
 ## reference
